@@ -1,0 +1,31 @@
+country,format,mins_2020,mins_2025,delta_mins,share_2020_pct,share_2025_pct,share_shift_pp,market_total_time_growth_pct,data_quality
+Brazil,Social & short video,165.0,229.0,64.0,30.3,35.6,5.3,18.2,Reported
+Brazil,Streaming video,45.0,80.0,35.0,8.3,12.4,4.2,18.2,Estimated
+Brazil,Music & audio,55.0,70.0,15.0,10.1,10.9,0.8,18.2,Estimated
+Brazil,Gaming,50.0,55.0,5.0,9.2,8.5,-0.6,18.2,Estimated
+Brazil,TV (linear),230.0,210.0,-20.0,42.2,32.6,-9.6,18.2,Estimated
+India,Social & short video,110.0,140.0,30.0,33.8,35.4,1.6,21.5,Estimated
+India,Streaming video,42.0,70.0,28.0,12.9,17.7,4.8,21.5,Reported
+India,Gaming,60.0,75.0,15.0,18.5,19.0,0.5,21.5,Reported
+India,Music & audio,35.0,45.0,10.0,10.8,11.4,0.6,21.5,Estimated
+India,TV (linear),78.0,65.0,-13.0,24.0,16.5,-7.5,21.5,Reported
+Japan,Streaming video,30.0,50.0,20.0,7.7,12.0,4.3,6.9,Estimated
+Japan,Social & short video,35.0,50.0,15.0,9.0,12.0,3.0,6.9,Reported
+Japan,Gaming,55.0,60.0,5.0,14.1,14.4,0.3,6.9,Estimated
+Japan,Music & audio,35.0,40.0,5.0,9.0,9.6,0.6,6.9,Estimated
+Japan,TV (linear),235.0,217.0,-18.0,60.3,52.0,-8.2,6.9,Reported
+South Korea,Streaming video,35.0,55.0,20.0,8.2,11.9,3.6,9.2,Estimated
+South Korea,Social & short video,50.0,70.0,20.0,11.8,15.1,3.3,9.2,Reported
+South Korea,Gaming,80.0,90.0,10.0,18.8,19.4,0.6,9.2,Estimated
+South Korea,Music & audio,45.0,50.0,5.0,10.6,10.8,0.2,9.2,Estimated
+South Korea,TV (linear),215.0,199.0,-16.0,50.6,42.9,-7.7,9.2,Reported
+United Kingdom,Streaming video,65.0,152.0,87.0,14.4,32.3,18.0,4.0,Derived
+United Kingdom,Social & short video,80.0,97.0,17.0,17.7,20.6,2.9,4.0,Reported
+United Kingdom,Music & audio,50.0,55.0,5.0,11.1,11.7,0.6,4.0,Estimated
+United Kingdom,Gaming,65.0,55.0,-10.0,14.4,11.7,-2.7,4.0,Estimated
+United Kingdom,TV (linear),192.0,111.0,-81.0,42.5,23.6,-18.9,4.0,Reported
+United States,Streaming video,75.0,118.0,43.0,17.0,24.7,7.6,8.6,Derived
+United States,Social & short video,105.0,136.0,31.0,23.9,28.5,4.6,8.6,Reported
+United States,Music & audio,55.0,60.0,5.0,12.5,12.6,0.1,8.6,Estimated
+United States,Gaming,75.0,60.0,-15.0,17.0,12.6,-4.5,8.6,Estimated
+United States,TV (linear),130.0,104.0,-26.0,29.5,21.8,-7.8,8.6,Derived

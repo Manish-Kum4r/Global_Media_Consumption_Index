@@ -1,0 +1,61 @@
+country,format,year,minutes_per_day,data_quality,source_id,all_sources
+India,TV (linear),2020,78,Reported,S17,S17
+India,TV (linear),2025,65,Reported,S17,S17
+India,Streaming video,2020,42,Reported,S16,S16
+India,Streaming video,2025,70,Reported,S16,S16
+India,Social & short video,2020,110,Estimated,S4,"S4, S5"
+India,Social & short video,2025,140,Estimated,S4,"S4, S5"
+India,Gaming,2020,60,Estimated,S8,S8
+India,Gaming,2025,75,Reported,S8,S8
+India,Music & audio,2020,35,Estimated,S5,"S5, S19"
+India,Music & audio,2025,45,Estimated,S5,"S5, S19"
+United States,TV (linear),2020,130,Derived,S2,S2
+United States,TV (linear),2025,104,Derived,S2,S2
+United States,Streaming video,2020,75,Derived,S2,S2
+United States,Streaming video,2025,118,Derived,S2,S2
+United States,Social & short video,2020,105,Reported,S4,S4
+United States,Social & short video,2025,136,Reported,S4,S4
+United States,Gaming,2020,75,Estimated,S6,S6
+United States,Gaming,2025,60,Estimated,S6,S6
+United States,Music & audio,2020,55,Estimated,S9,S9
+United States,Music & audio,2025,60,Estimated,S9,S9
+United Kingdom,TV (linear),2020,192,Reported,S1,S1
+United Kingdom,TV (linear),2025,111,Reported,S1,S1
+United Kingdom,Streaming video,2020,65,Derived,S1,S1
+United Kingdom,Streaming video,2025,152,Derived,S1,S1
+United Kingdom,Social & short video,2020,80,Reported,S4,S4
+United Kingdom,Social & short video,2025,97,Reported,S4,S4
+United Kingdom,Gaming,2020,65,Estimated,S6,S6
+United Kingdom,Gaming,2025,55,Estimated,S6,S6
+United Kingdom,Music & audio,2020,50,Estimated,S9,S9
+United Kingdom,Music & audio,2025,55,Estimated,S9,S9
+Japan,TV (linear),2020,235,Reported,S3,S3
+Japan,TV (linear),2025,217,Reported,S3,S3
+Japan,Streaming video,2020,30,Estimated,S3,S3
+Japan,Streaming video,2025,50,Estimated,S3,S3
+Japan,Social & short video,2020,35,Reported,S4,S4
+Japan,Social & short video,2025,50,Reported,S4,S4
+Japan,Gaming,2020,55,Estimated,S6,S6
+Japan,Gaming,2025,60,Estimated,S6,S6
+Japan,Music & audio,2020,35,Estimated,S9,S9
+Japan,Music & audio,2025,40,Estimated,S9,S9
+South Korea,TV (linear),2020,215,Reported,S3,S3
+South Korea,TV (linear),2025,199,Reported,S3,S3
+South Korea,Streaming video,2020,35,Estimated,S3,S3
+South Korea,Streaming video,2025,55,Estimated,S3,S3
+South Korea,Social & short video,2020,50,Reported,S4,S4
+South Korea,Social & short video,2025,70,Reported,S4,S4
+South Korea,Gaming,2020,80,Estimated,S6,S6
+South Korea,Gaming,2025,90,Estimated,S6,S6
+South Korea,Music & audio,2020,45,Estimated,S9,S9
+South Korea,Music & audio,2025,50,Estimated,S9,S9
+Brazil,TV (linear),2020,230,Estimated,S3,"S3, S19"
+Brazil,TV (linear),2025,210,Estimated,S3,"S3, S19"
+Brazil,Streaming video,2020,45,Estimated,S11,S11
+Brazil,Streaming video,2025,80,Estimated,S11,S11
+Brazil,Social & short video,2020,165,Reported,S4,S4
+Brazil,Social & short video,2025,229,Reported,S4,S4
+Brazil,Gaming,2020,50,Estimated,S6,S6
+Brazil,Gaming,2025,55,Estimated,S6,S6
+Brazil,Music & audio,2020,55,Estimated,S9,S9
+Brazil,Music & audio,2025,70,Estimated,S9,S9

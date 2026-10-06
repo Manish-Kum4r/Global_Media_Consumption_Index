@@ -1,0 +1,13 @@
+country,metric,year,value,unit,data_quality,source_id,all_sources,note
+India,cinema_admissions_per_capita,2025,0.7,per_year,Estimated,S10,S10,~1.0bn admissions est. / EY-FICCI live events $1.55bn
+India,live_events_spend_per_capita,2025,1.07,usd_per_year,Estimated,S10,S10,Derived from live events market size / population
+United States,cinema_admissions_per_capita,2025,2.25,per_year,Reported,S10,S10,769.2m tickets / 342m population; Pollstar live $12.6bn
+United States,live_events_spend_per_capita,2025,36.84,usd_per_year,Estimated,S10,S10,Derived from live events market size / population
+United Kingdom,cinema_admissions_per_capita,2025,1.74,per_year,Estimated,S10,S10,~120m admissions; live music ~$2.5bn
+United Kingdom,live_events_spend_per_capita,2025,36.23,usd_per_year,Estimated,S10,S10,Derived from live events market size / population
+Japan,cinema_admissions_per_capita,2025,1.53,per_year,Reported,S10,S10,188.76m admissions (record year)
+Japan,live_events_spend_per_capita,2025,12.2,usd_per_year,Estimated,S10,S10,Derived from live events market size / population
+South Korea,cinema_admissions_per_capita,2025,2.1,per_year,Estimated,S10,S10,~110m admissions
+South Korea,live_events_spend_per_capita,2025,11.54,usd_per_year,Estimated,S10,S10,Derived from live events market size / population
+Brazil,cinema_admissions_per_capita,2025,0.57,per_year,Estimated,S10,S10,~120m admissions
+Brazil,live_events_spend_per_capita,2025,3.77,usd_per_year,Estimated,S10,S10,Derived from live events market size / population

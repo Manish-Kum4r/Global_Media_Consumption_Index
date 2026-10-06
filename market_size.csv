@@ -1,0 +1,85 @@
+country,format,year,revenue_usd_bn,data_quality,source_id,all_sources,definition
+India,TV (linear),2020,10.5,Estimated,S11,S11,PwC traditional TV; ad + subscription
+India,TV (linear),2025,14.6,Derived,S11,S11,PwC traditional TV; ad + subscription
+India,OTT video,2020,0.6,Estimated,S12,S12,"PwC India OTT; 216.5m subs, ARPU $7.3/sub/yr"
+India,OTT video,2025,2.2,Reported,S12,S12,"PwC India OTT; 216.5m subs, ARPU $7.3/sub/yr"
+India,Digital advertising,2020,3.5,Estimated,S14,"S14, S5",$8 per capita x population; incl. search & social
+India,Digital advertising,2025,11.6,Derived,S14,"S14, S5",$8 per capita x population; incl. search & social
+India,Gaming,2020,0.9,Estimated,S8,S8,Lumikai video games ex-RMG; Niko Partners estimates $1.04bn
+India,Gaming,2025,1.5,Reported,S8,S8,Lumikai video games ex-RMG; Niko Partners estimates $1.04bn
+India,Recorded music,2020,0.15,Estimated,S9,S9,India not in IFPI top 10; scaled from PwC music+radio $1.0bn
+India,Recorded music,2025,0.3,Estimated,S9,S9,India not in IFPI top 10; scaled from PwC music+radio $1.0bn
+India,Live events,2020,0.5,Estimated,S5,S5,EY-FICCI organised live events (+44% in 2025)
+India,Live events,2025,1.55,Reported,S5,S5,EY-FICCI organised live events (+44% in 2025)
+India,Theatrical,2020,0.5,Estimated,S10,S10,Gower Street/Comscore; ~5% of global box office
+India,Theatrical,2025,1.5,Reported,S10,S10,Gower Street/Comscore; ~5% of global box office
+United States,TV (linear),2020,150.0,Estimated,S11,S11,Linear TV ad + pay-TV subscription
+United States,TV (linear),2025,135.0,Estimated,S11,S11,Linear TV ad + pay-TV subscription
+United States,OTT video,2020,60.0,Estimated,S11,S11,PwC US: largest streaming market globally
+United States,OTT video,2025,113.3,Reported,S11,S11,PwC US: largest streaming market globally
+United States,Digital advertising,2020,190.0,Estimated,S11,S11,PwC US internet advertising; ~$419.7bn by 2030 at 7.3% CAGR
+United States,Digital advertising,2025,295.0,Derived,S11,S11,PwC US internet advertising; ~$419.7bn by 2030 at 7.3% CAGR
+United States,Gaming,2020,45.0,Estimated,S6,S6,Newzoo
+United States,Gaming,2025,49.6,Reported,S6,S6,Newzoo
+United States,Recorded music,2020,10.5,Estimated,S9,S9,IFPI: 38.7% share of $31.7bn global; +3.3% YoY
+United States,Recorded music,2025,12.3,Reported,S9,S9,IFPI: 38.7% share of $31.7bn global; +3.3% YoY
+United States,Live events,2020,5.0,Estimated,S15,S15,Pollstar: world's largest live music market
+United States,Live events,2025,12.6,Reported,S15,S15,Pollstar: world's largest live music market
+United States,Theatrical,2020,2.3,Estimated,S10,S10,Comscore US/Canada; 769.2m tickets; still 22% below 2019
+United States,Theatrical,2025,8.9,Reported,S10,S10,Comscore US/Canada; 769.2m tickets; still 22% below 2019
+United Kingdom,TV (linear),2020,14.0,Estimated,S1,S1,Linear broadcast TV revenue
+United Kingdom,TV (linear),2025,12.0,Estimated,S1,S1,Linear broadcast TV revenue
+United Kingdom,OTT video,2020,3.0,Estimated,S11,S11,Scaled from UK commercial TV+online video >GBP 18bn
+United Kingdom,OTT video,2025,7.0,Estimated,S11,S11,Scaled from UK commercial TV+online video >GBP 18bn
+United Kingdom,Digital advertising,2020,18.0,Estimated,S11,S11,UK is Europe's largest E&M market
+United Kingdom,Digital advertising,2025,30.0,Estimated,S11,S11,UK is Europe's largest E&M market
+United Kingdom,Gaming,2020,6.3,Estimated,S6,S6,Newzoo
+United Kingdom,Gaming,2025,6.8,Reported,S6,S6,Newzoo
+United Kingdom,Recorded music,2020,1.5,Estimated,S9,S9,IFPI rank 3; value estimated
+United Kingdom,Recorded music,2025,1.9,Estimated,S9,S9,IFPI rank 3; value estimated
+United Kingdom,Live events,2020,1.0,Estimated,S15,S15,Pollstar / live music estimates
+United Kingdom,Live events,2025,2.5,Estimated,S15,S15,Pollstar / live music estimates
+United Kingdom,Theatrical,2020,0.5,Estimated,S10,S10,UK & Ireland; Gower Street
+United Kingdom,Theatrical,2025,1.5,Reported,S10,S10,UK & Ireland; Gower Street
+Japan,TV (linear),2020,26.0,Estimated,S3,S3,TV ad + NHK licence + pay TV
+Japan,TV (linear),2025,22.0,Estimated,S3,S3,TV ad + NHK licence + pay TV
+Japan,OTT video,2020,2.5,Estimated,S11,S11,PwC Japan OTT
+Japan,OTT video,2025,6.0,Estimated,S11,S11,PwC Japan OTT
+Japan,Digital advertising,2020,15.0,Estimated,S11,S11,PwC Japan internet advertising
+Japan,Digital advertising,2025,25.0,Estimated,S11,S11,PwC Japan internet advertising
+Japan,Gaming,2020,16.6,Estimated,S6,S6,"Newzoo; 3rd largest games market, 74.1m players"
+Japan,Gaming,2025,17.6,Reported,S6,S6,"Newzoo; 3rd largest games market, 74.1m players"
+Japan,Recorded music,2020,2.8,Estimated,S9,S9,IFPI rank 2; +8.9% YoY in 2025; ~60% physical
+Japan,Recorded music,2025,3.0,Estimated,S9,S9,IFPI rank 2; +8.9% YoY in 2025; ~60% physical
+Japan,Live events,2020,0.9,Estimated,S15,S15,Live music estimates
+Japan,Live events,2025,1.5,Estimated,S15,S15,Live music estimates
+Japan,Theatrical,2020,1.4,Estimated,S10,S10,"Record year, +32%; 188.76m admissions"
+Japan,Theatrical,2025,1.8,Reported,S10,S10,"Record year, +32%; 188.76m admissions"
+South Korea,TV (linear),2020,7.0,Estimated,S3,S3,TV ad + pay TV
+South Korea,TV (linear),2025,6.0,Estimated,S3,S3,TV ad + pay TV
+South Korea,OTT video,2020,1.0,Estimated,S11,S11,PwC Korea OTT
+South Korea,OTT video,2025,2.5,Estimated,S11,S11,PwC Korea OTT
+South Korea,Digital advertising,2020,5.0,Estimated,S11,S11,PwC Korea internet advertising
+South Korea,Digital advertising,2025,8.0,Estimated,S11,S11,PwC Korea internet advertising
+South Korea,Gaming,2020,7.1,Estimated,S6,S6,Newzoo; 34m players
+South Korea,Gaming,2025,8.3,Reported,S6,S6,Newzoo; 34m players
+South Korea,Recorded music,2020,1.0,Estimated,S9,S9,IFPI rank 7
+South Korea,Recorded music,2025,0.9,Estimated,S9,S9,IFPI rank 7
+South Korea,Live events,2020,0.3,Estimated,S15,S15,Live music estimates
+South Korea,Live events,2025,0.6,Estimated,S15,S15,Live music estimates
+South Korea,Theatrical,2020,0.4,Estimated,S10,S10,Gower Street
+South Korea,Theatrical,2025,0.7,Reported,S10,S10,Gower Street
+Brazil,TV (linear),2020,9.5,Estimated,S19,S19,TV ad + pay TV
+Brazil,TV (linear),2025,9.0,Estimated,S19,S19,TV ad + pay TV
+Brazil,OTT video,2020,1.2,Estimated,S11,S11,PwC Brazil OTT
+Brazil,OTT video,2025,3.5,Estimated,S11,S11,PwC Brazil OTT
+Brazil,Digital advertising,2020,4.5,Estimated,S11,S11,PwC Brazil internet advertising
+Brazil,Digital advertising,2025,8.0,Estimated,S11,S11,PwC Brazil internet advertising
+Brazil,Gaming,2020,2.4,Estimated,S6,S6,Newzoo; 123.3m players
+Brazil,Gaming,2025,2.8,Reported,S6,S6,Newzoo; 123.3m players
+Brazil,Recorded music,2020,0.35,Estimated,S9,S9,IFPI rank 9; +14.1% YoY in 2025
+Brazil,Recorded music,2025,0.55,Estimated,S9,S9,IFPI rank 9; +14.1% YoY in 2025
+Brazil,Live events,2020,0.3,Estimated,S15,S15,Live music estimates
+Brazil,Live events,2025,0.8,Estimated,S15,S15,Live music estimates
+Brazil,Theatrical,2020,0.2,Estimated,S10,S10,Not in global top 10 territories
+Brazil,Theatrical,2025,0.4,Estimated,S10,S10,Not in global top 10 territories

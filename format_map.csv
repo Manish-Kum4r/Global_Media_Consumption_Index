@@ -1,0 +1,6 @@
+time_format,money_format,note
+TV (linear),TV (linear),direct match
+Streaming video,OTT video,direct match
+Gaming,Gaming,direct match
+Music & audio,Recorded music,closest revenue proxy
+Social & short video,Digital advertising,included for completeness: short video monetises through advertising

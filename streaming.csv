@@ -1,0 +1,7 @@
+country,year,netflix_subs_m,paid_ott_subs_m,ott_revenue_usd_bn,data_quality,source_id,all_sources
+India,2025,13.3,216.5,2.2,Estimated,S4,S4 / S12
+United States,2025,87.8,245.0,113.3,Estimated,S4,S4 / S11
+United Kingdom,2025,19.8,45.0,7.0,Estimated,S4,S4 / S11
+Japan,2025,9.8,32.0,6.0,Estimated,S4,S4 / S11
+South Korea,2025,9.0,18.0,2.5,Estimated,S4,S4 / S11
+Brazil,2025,17.9,42.0,3.5,Estimated,S4,S4 / S11

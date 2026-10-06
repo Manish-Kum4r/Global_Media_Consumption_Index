@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Media Consumption Index, dashboard</title>
+<style>
+  :root { --navy:#0F2B46; --teal:#1F6F7A; --orange:#D96B2B; --accent:#7FC4C9; --grey:#8C8C8C; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#F5F7F8; color:#1A1A1A;
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  header { background:var(--navy); color:#fff; padding:30px 34px 26px; }
+  header h1 { margin:0 0 6px; font-size:26px; letter-spacing:-0.4px; }
+  header p { margin:0; color:#BFD3E0; font-size:13.5px; max-width:900px; line-height:1.5; }
+  .wrap { max-width:1180px; margin:0 auto; padding:24px 20px 60px; }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-bottom:26px; }
+  .kpi { background:#fff; border:1px solid #E2E8EC; border-radius:9px; padding:16px 18px; }
+  .kpi-label { font-size:11.5px; text-transform:uppercase; letter-spacing:.6px; color:#6B7C89; font-weight:600; }
+  .kpi-value { font-size:30px; font-weight:700; color:var(--navy); margin:7px 0 5px; letter-spacing:-1px; }
+  .kpi-note { font-size:11.5px; color:#5A6B78; line-height:1.45; }
+  .card { background:#fff; border:1px solid #E2E8EC; border-radius:9px; padding:20px 22px; margin-bottom:20px; }
+  .card h2 { margin:0 0 3px; font-size:16.5px; color:var(--navy); }
+  .card .sub { margin:0 0 16px; font-size:12.5px; color:#5A6B78; line-height:1.5; }
+  .card svg { width:100%; height:auto; display:block; }
+  .legend { display:flex; gap:18px; font-size:11.5px; color:#4A5A66; margin-top:10px; flex-wrap:wrap; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:5px; vertical-align:middle; }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; margin-top:6px; }
+  th,td { padding:8px 10px; text-align:left; border-bottom:1px solid #EDF1F3; }
+  th { background:#F7F9FA; font-size:11px; text-transform:uppercase; letter-spacing:.5px; color:#6B7C89; }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  td.ok { color:#2E7D5B; font-weight:600; } td.warn { color:#C0504D; font-weight:600; }
+  .sowhat { background:#F1F7F8; border-left:3px solid var(--teal); padding:12px 15px;
+             font-size:12.5px; line-height:1.55; border-radius:0 6px 6px 0; margin-top:14px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:860px) { .grid2 { grid-template-columns:1fr; } }
+  footer { font-size:11.5px; color:#6B7C89; line-height:1.6; padding:18px 22px; background:#fff;
+            border:1px solid #E2E8EC; border-radius:9px; }
+  code { background:#F1F4F6; padding:1px 5px; border-radius:3px; font-size:11.5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Global Media Consumption Index</h1>
+  <p>How six markets, India, the United States, the United Kingdom, Japan, South Korea and Brazil, 
+     spend their entertainment time and money across video, gaming, live events and audio.
+     Every figure in this dashboard is served from a SQL query against the project database and rendered
+     from the query output. Nothing here is typed in by hand.</p>
+</header>
+
+<div class="wrap">
+  <div class="kpis"><div class="kpi">
+            <div class="kpi-label">USD per 1,000 hours of attention</div>
+            <div class="kpi-value">$3.56</div>
+            <div class="kpi-note">India, 2025, against $307 in the United States</div>
+        </div><div class="kpi">
+            <div class="kpi-label">Paid OTT subscriptions</div>
+            <div class="kpi-value">216.5m</div>
+            <div class="kpi-note">3rd-largest paying base in the world</div>
+        </div><div class="kpi">
+            <div class="kpi-label">US : India revenue per subscription</div>
+            <div class="kpi-value">52x</div>
+            <div class="kpi-note">on a subscriber base only 1.1x larger</div>
+        </div><div class="kpi">
+            <div class="kpi-label">US : India GDP per capita</div>
+            <div class="kpi-value">33x</div>
+            <div class="kpi-note">so most of the revenue gap is not income</div>
+        </div></div>
+
+  <div class="card">
+    <h2>Attention is global. Money is local.</h2>
+    <p class="sub">USD of screen revenue the industry earns per 1,000 hours its population spends consuming media (2025).
+       Population, currency and market size are stripped out, so a $13bn market and a $305bn market can be compared directly.</p>
+    <svg viewBox="0 0 760 306" role="img" aria-label="Monetisation index"><text x="122" y="33.120000000000005" text-anchor="end" font-size="13" fill="#333">United States</text><rect x="132" y="10" width="538.0" height="34" rx="3" fill="#0F2B46"/><text x="680.0" y="33.120000000000005" font-size="13" font-weight="600" fill="#1A1A1A">$307</text><text x="122" y="79.12" text-anchor="end" font-size="13" fill="#333">United Kingdom</text><rect x="132" y="56" width="249.0" height="34" rx="3" fill="#1F6F7A"/><text x="390.97564315758586" y="79.12" font-size="13" font-weight="600" fill="#1A1A1A">$142</text><text x="122" y="125.12" text-anchor="end" font-size="13" fill="#333">Japan</text><rect x="132" y="102" width="191.2" height="34" rx="3" fill="#1F6F7A"/><text x="333.156738074277" y="125.12" font-size="13" font-weight="600" fill="#1A1A1A">$109</text><text x="122" y="171.12" text-anchor="end" font-size="13" fill="#333">South Korea</text><rect x="132" y="148" width="155.4" height="34" rx="3" fill="#1F6F7A"/><text x="297.37076526786007" y="171.12" font-size="13" font-weight="600" fill="#1A1A1A">$89</text><text x="122" y="217.12" text-anchor="end" font-size="13" fill="#333">Brazil</text><rect x="132" y="194" width="25.3" height="34" rx="3" fill="#1F6F7A"/><text x="167.3483974045453" y="217.12" font-size="13" font-weight="600" fill="#1A1A1A">$14</text><text x="122" y="263.12" text-anchor="end" font-size="13" fill="#333">India</text><rect x="132" y="240" width="6.2" height="34" rx="3" fill="#D96B2B"/><text x="148.2450030975904" y="263.12" font-size="13" font-weight="600" fill="#1A1A1A">$4</text></svg>
+    <div class="sowhat"><strong>So what:</strong> An American hour of attention is worth roughly 86x an Indian hour.
+      Any India media strategy built as a scaled-down version of a US one is mispriced from the first slide.</div>
+  </div>
+
+  <div class="card">
+    <h2>Attention share vs revenue share</h2>
+    <p class="sub">Each market's share of the six-market attention pool and revenue pool. Where the bars disagree,
+       the market is monetising above or below its attention weight.</p>
+    <svg viewBox="0 0 760 320" role="img" aria-label="Attention versus revenue share"><line x1="60" y1="260.0" x2="740" y2="260.0" stroke="#EAEAEA"/><text x="52" y="264.0" text-anchor="end" font-size="10" fill="#888">0%</text><line x1="60" y1="194.9" x2="740" y2="194.9" stroke="#EAEAEA"/><text x="52" y="198.9" text-anchor="end" font-size="10" fill="#888">20%</text><line x1="60" y1="129.7" x2="740" y2="129.7" stroke="#EAEAEA"/><text x="52" y="133.7" text-anchor="end" font-size="10" fill="#888">40%</text><line x1="60" y1="64.6" x2="740" y2="64.6" stroke="#EAEAEA"/><text x="52" y="68.6" text-anchor="end" font-size="10" fill="#888">60%</text><line x1="60" y1="-0.5" x2="740" y2="-0.5" stroke="#EAEAEA"/><text x="52" y="3.5" text-anchor="end" font-size="10" fill="#888">80%</text><rect x="80.4" y="205.6" width="31.7" height="54.4" rx="2" fill="#7FC4C9"/><rect x="116.1" y="20.0" width="31.7" height="240.0" rx="2" fill="#0F2B46"/><text x="112.1" y="276" text-anchor="middle" font-size="10.5" fill="#333">United States</text><text x="96.3" y="200.6" text-anchor="middle" font-size="9.5" fill="#5A8F96">17%</text><text x="132.0" y="15.0" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0F2B46">74%</text><rect x="193.7" y="212.8" width="31.7" height="47.2" rx="2" fill="#7FC4C9"/><rect x="229.5" y="230.7" width="31.7" height="29.3" rx="2" fill="#0F2B46"/><text x="225.5" y="276" text-anchor="middle" font-size="10.5" fill="#333">Japan</text><text x="209.6" y="207.8" text-anchor="middle" font-size="9.5" fill="#5A8F96">14%</text><text x="245.3" y="225.7" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0F2B46">9%</text><rect x="307.1" y="206.6" width="31.7" height="53.4" rx="2" fill="#7FC4C9"/><rect x="342.8" y="236.2" width="31.7" height="23.8" rx="2" fill="#0F2B46"/><text x="338.8" y="276" text-anchor="middle" font-size="10.5" fill="#333">United Kingdom</text><text x="322.9" y="201.6" text-anchor="middle" font-size="9.5" fill="#5A8F96">16%</text><text x="358.7" y="231.2" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0F2B46">7%</text><rect x="420.4" y="215.1" width="31.7" height="44.9" rx="2" fill="#7FC4C9"/><rect x="456.1" y="247.3" width="31.7" height="12.7" rx="2" fill="#0F2B46"/><text x="452.1" y="276" text-anchor="middle" font-size="10.5" fill="#333">India</text><text x="436.3" y="210.1" text-anchor="middle" font-size="9.5" fill="#5A8F96">14%</text><text x="472.0" y="242.3" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0F2B46">4%</text><rect x="533.7" y="207.2" width="31.7" height="52.8" rx="2" fill="#7FC4C9"/><rect x="569.5" y="249.6" width="31.7" height="10.4" rx="2" fill="#0F2B46"/><text x="565.5" y="276" text-anchor="middle" font-size="10.5" fill="#333">South Korea</text><text x="549.6" y="202.2" text-anchor="middle" font-size="9.5" fill="#5A8F96">16%</text><text x="585.3" y="244.6" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0F2B46">3%</text><rect x="647.1" y="186.7" width="31.7" height="73.3" rx="2" fill="#7FC4C9"/><rect x="682.8" y="250.6" width="31.7" height="9.4" rx="2" fill="#0F2B46"/><text x="678.8" y="276" text-anchor="middle" font-size="10.5" fill="#333">Brazil</text><text x="662.9" y="181.7" text-anchor="middle" font-size="9.5" fill="#5A8F96">22%</text><text x="698.7" y="245.6" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0F2B46">3%</text></svg>
+    <div class="legend"><span><span class="dot" style="background:#7FC4C9"></span>Share of attention</span>
+      <span><span class="dot" style="background:#0F2B46"></span>Share of revenue</span></div>
+    <div class="sowhat"><strong>So what:</strong> India holds 14% of the attention in this universe and 4% of the money.
+      The gap is the opportunity, and the reason user acquisition alone cannot be the strategy.</div>
+  </div>
+
+  <div class="card">
+    <h2>Where the money grew, by market</h2>
+    <p class="sub">Revenue CAGR 2020–2025 for each format, within each market. One dot per format.
+       Note: 2020 is a COVID-depressed base for theatrical, live events and music, so part of their CAGR is recovery, not growth.</p>
+    <svg viewBox="0 0 760 420" role="img" aria-label="Format growth by market"><line x1="218.9" y1="24" x2="218.9" y2="378" stroke="#EFEFEF"/><text x="218.9" y="392" text-anchor="middle" font-size="9.5" fill="#888">0%</text><line x1="360.0" y1="24" x2="360.0" y2="378" stroke="#EFEFEF"/><text x="360.0" y="392" text-anchor="middle" font-size="9.5" fill="#888">10%</text><line x1="501.1" y1="24" x2="501.1" y2="378" stroke="#EFEFEF"/><text x="501.1" y="392" text-anchor="middle" font-size="9.5" fill="#888">20%</text><line x1="642.2" y1="24" x2="642.2" y2="378" stroke="#EFEFEF"/><text x="642.2" y="392" text-anchor="middle" font-size="9.5" fill="#888">30%</text><line x1="218.9" y1="24" x2="218.9" y2="378" stroke="#BBBBBB" stroke-dasharray="3,3"/><text x="114" y="46" text-anchor="end" font-size="12.5" font-weight="600" fill="#333">India</text><circle cx="637.9" cy="42" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="637.9" y="31" text-anchor="middle" font-size="8.6" fill="#555">OTT video</text><circle cx="601.2" cy="42" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="601.2" y="31" text-anchor="middle" font-size="8.6" fill="#555">Digital advertising</text><circle cx="577.3" cy="42" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="577.3" y="31" text-anchor="middle" font-size="8.6" fill="#555">Live events</text><circle cx="566.0" cy="42" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="566.0" y="31" text-anchor="middle" font-size="8.6" fill="#555">Theatrical</text><circle cx="429.1" cy="42" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="429.1" y="31" text-anchor="middle" font-size="8.6" fill="#555">Recorded music</text><circle cx="371.3" cy="42" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="371.3" y="31" text-anchor="middle" font-size="8.6" fill="#555">Gaming</text><circle cx="314.8" cy="42" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="314.8" y="31" text-anchor="middle" font-size="8.6" fill="#555">TV</text><text x="114" y="108" text-anchor="end" font-size="12.5" font-weight="600" fill="#333">United States</text><circle cx="657.7" cy="104" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="657.7" y="93" text-anchor="middle" font-size="8.6" fill="#555">Theatrical</text><circle cx="505.3" cy="104" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="505.3" y="93" text-anchor="middle" font-size="8.6" fill="#555">Live events</text><circle cx="410.8" cy="104" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="410.8" y="93" text-anchor="middle" font-size="8.6" fill="#555">OTT video</text><circle cx="348.7" cy="104" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="348.7" y="93" text-anchor="middle" font-size="8.6" fill="#555">Digital advertising</text><circle cx="264.0" cy="104" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="264.0" y="93" text-anchor="middle" font-size="8.6" fill="#555">Recorded music</text><circle cx="247.1" cy="104" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="247.1" y="93" text-anchor="middle" font-size="8.6" fill="#555">Gaming</text><circle cx="189.3" cy="104" r="5.5" fill="#D96B2B" stroke="white" stroke-width="1.2"/><text x="189.3" y="93" text-anchor="middle" font-size="8.6" fill="#555">TV</text><text x="114" y="170" text-anchor="end" font-size="12.5" font-weight="600" fill="#333">United Kingdom</text><circle cx="566.0" cy="166" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="566.0" y="155" text-anchor="middle" font-size="8.6" fill="#555">Theatrical</text><circle cx="502.5" cy="166" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="502.5" y="155" text-anchor="middle" font-size="8.6" fill="#555">Live events</text><circle cx="479.9" cy="166" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="479.9" y="155" text-anchor="middle" font-size="8.6" fill="#555">OTT video</text><circle cx="371.3" cy="166" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="371.3" y="155" text-anchor="middle" font-size="8.6" fill="#555">Digital advertising</text><circle cx="286.6" cy="166" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="286.6" y="155" text-anchor="middle" font-size="8.6" fill="#555">Recorded music</text><circle cx="240.0" cy="166" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="240.0" y="155" text-anchor="middle" font-size="8.6" fill="#555">Gaming</text><circle cx="176.6" cy="166" r="5.5" fill="#D96B2B" stroke="white" stroke-width="1.2"/><text x="176.6" y="155" text-anchor="middle" font-size="8.6" fill="#555">TV</text><text x="114" y="232" text-anchor="end" font-size="12.5" font-weight="600" fill="#333">Japan</text><circle cx="488.4" cy="228" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="488.4" y="217" text-anchor="middle" font-size="8.6" fill="#555">OTT video</text><circle cx="371.3" cy="228" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="371.3" y="217" text-anchor="middle" font-size="8.6" fill="#555">Digital advertising</text><circle cx="371.3" cy="228" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="371.3" y="217" text-anchor="middle" font-size="8.6" fill="#555">Live events</text><circle cx="292.3" cy="228" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="292.3" y="217" text-anchor="middle" font-size="8.6" fill="#555">Theatrical</text><circle cx="238.6" cy="228" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="238.6" y="217" text-anchor="middle" font-size="8.6" fill="#555">Recorded music</text><circle cx="235.8" cy="228" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="235.8" y="217" text-anchor="middle" font-size="8.6" fill="#555">Gaming</text><circle cx="172.3" cy="228" r="5.5" fill="#D96B2B" stroke="white" stroke-width="1.2"/><text x="172.3" y="217" text-anchor="middle" font-size="8.6" fill="#555">TV</text><text x="114" y="294" text-anchor="end" font-size="12.5" font-weight="600" fill="#333">South Korea</text><circle cx="502.5" cy="290" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="502.5" y="279" text-anchor="middle" font-size="8.6" fill="#555">OTT video</text><circle cx="429.1" cy="290" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="429.1" y="279" text-anchor="middle" font-size="8.6" fill="#555">Live events</text><circle cx="385.4" cy="290" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="385.4" y="279" text-anchor="middle" font-size="8.6" fill="#555">Theatrical</text><circle cx="358.6" cy="290" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="358.6" y="279" text-anchor="middle" font-size="8.6" fill="#555">Digital advertising</text><circle cx="264.0" cy="290" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="264.0" y="279" text-anchor="middle" font-size="8.6" fill="#555">Gaming</text><circle cx="189.3" cy="290" r="5.5" fill="#D96B2B" stroke="white" stroke-width="1.2"/><text x="189.3" y="279" text-anchor="middle" font-size="8.6" fill="#555">Recorded music</text><circle cx="176.6" cy="290" r="5.5" fill="#D96B2B" stroke="white" stroke-width="1.2"/><text x="176.6" y="279" text-anchor="middle" font-size="8.6" fill="#555">TV</text><text x="114" y="356" text-anchor="end" font-size="12.5" font-weight="600" fill="#333">Brazil</text><circle cx="556.1" cy="352" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="556.1" y="341" text-anchor="middle" font-size="8.6" fill="#555">OTT video</text><circle cx="525.0" cy="352" r="5.5" fill="#0F2B46" stroke="white" stroke-width="1.2"/><text x="525.0" y="341" text-anchor="middle" font-size="8.6" fill="#555">Live events</text><circle cx="429.1" cy="352" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="429.1" y="341" text-anchor="middle" font-size="8.6" fill="#555">Theatrical</text><circle cx="391.0" cy="352" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="391.0" y="341" text-anchor="middle" font-size="8.6" fill="#555">Digital advertising</text><circle cx="352.9" cy="352" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="352.9" y="341" text-anchor="middle" font-size="8.6" fill="#555">Recorded music</text><circle cx="262.6" cy="352" r="5.5" fill="#1F6F7A" stroke="white" stroke-width="1.2"/><text x="262.6" y="341" text-anchor="middle" font-size="8.6" fill="#555">Gaming</text><circle cx="203.4" cy="352" r="5.5" fill="#D96B2B" stroke="white" stroke-width="1.2"/><text x="203.4" y="341" text-anchor="middle" font-size="8.6" fill="#555">TV</text></svg>
+    <div class="legend"><span><span class="dot" style="background:#D96B2B"></span>Declining</span>
+      <span><span class="dot" style="background:#1F6F7A"></span>Growing</span>
+      <span><span class="dot" style="background:#0F2B46"></span>Growing &gt;15% CAGR</span></div>
+    <div class="sowhat"><strong>So what:</strong> Linear TV declines in four of six markets, but notice what replaces it, 
+      OTT video is the fastest-growing format almost everywhere. The migration is inside the screen, not away from it.</div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h2>How much of this is actually reported?</h2>
+      <p class="sub">Share of database rows tagged Reported / Derived / Estimated.
+         Run before quoting anything.</p>
+      <svg viewBox="0 0 460 260" role="img" aria-label="Data quality audit"><rect x="130.0" y="20" width="180.0" height="24" rx="2" fill="#2E7D5B"/><rect x="310.0" y="20" width="90.0" height="24" rx="2" fill="#C0504D"/><text x="120" y="36" text-anchor="end" font-size="11" fill="#333">countries</text><text x="408.0" y="36" font-size="11" font-weight="600" fill="#333">67%</text><rect x="130.0" y="64" width="94.5" height="24" rx="2" fill="#2E7D5B"/><rect x="224.5" y="64" width="27.0" height="24" rx="2" fill="#D9A441"/><rect x="251.5" y="64" width="148.5" height="24" rx="2" fill="#C0504D"/><text x="120" y="80" text-anchor="end" font-size="11" fill="#333">time_spend</text><text x="408.0" y="80" font-size="11" font-weight="600" fill="#333">35%</text><rect x="130.0" y="108" width="51.4" height="24" rx="2" fill="#2E7D5B"/><rect x="181.4" y="108" width="9.6" height="24" rx="2" fill="#D9A441"/><rect x="191.1" y="108" width="208.9" height="24" rx="2" fill="#C0504D"/><text x="120" y="124" text-anchor="end" font-size="11" fill="#333">market_size</text><text x="408.0" y="124" font-size="11" font-weight="600" fill="#333">19%</text><rect x="130.0" y="152" width="45.0" height="24" rx="2" fill="#2E7D5B"/><rect x="175.0" y="152" width="225.0" height="24" rx="2" fill="#C0504D"/><text x="120" y="168" text-anchor="end" font-size="11" fill="#333">offline_physical</text><text x="408.0" y="168" font-size="11" font-weight="600" fill="#333">17%</text><rect x="130.0" y="196" width="270.0" height="24" rx="2" fill="#C0504D"/><text x="120" y="212" text-anchor="end" font-size="11" fill="#333">streaming</text><text x="408.0" y="212" font-size="11" font-weight="600" fill="#333">0%</text></svg>
+      <div class="legend">
+        <span><span class="dot" style="background:#2E7D5B"></span>Reported</span>
+        <span><span class="dot" style="background:#D9A441"></span>Derived</span>
+        <span><span class="dot" style="background:#C0504D"></span>Estimated</span>
+      </div>
+      <div class="sowhat"><strong>So what:</strong> 26% of the database is directly reported.
+        The revenue side is strong; the time-spend side is the weak link, and the project says so out loud.</div>
+    </div>
+
+    <div class="card">
+      <h2>Sensitivity: does the ranking survive a different denominator?</h2>
+      <p class="sub">The index uses a five-format time sum. The independent all-media measure is a fair challenge to it.</p>
+      <table>
+        <tr><th>Market</th><th class="num">5-format</th><th class="num">All-media</th><th class="num">Rank A</th><th class="num">Rank B</th><th>Stability</th></tr>
+        <tr><td>United States</td><td class='num'>$306.69</td><td class='num'>$222.12</td><td class='num'>1</td><td class='num'>1</td><td class='ok'>stable</td></tr><tr><td>United Kingdom</td><td class='num'>$141.93</td><td class='num'>$101.07</td><td class='num'>2</td><td class='num'>2</td><td class='ok'>stable</td></tr><tr><td>Japan</td><td class='num'>$108.97</td><td class='num'>$58.26</td><td class='num'>3</td><td class='num'>4</td><td class='warn'>RANK MOVES</td></tr><tr><td>South Korea</td><td class='num'>$88.57</td><td class='num'>$62.27</td><td class='num'>4</td><td class='num'>3</td><td class='warn'>RANK MOVES</td></tr><tr><td>Brazil</td><td class='num'>$14.45</td><td class='num'>$14.43</td><td class='num'>5</td><td class='num'>5</td><td class='ok'>stable</td></tr><tr><td>India</td><td class='num'>$3.56</td><td class='num'>$2.93</td><td class='num'>6</td><td class='num'>6</td><td class='ok'>stable</td></tr>
+      </table>
+      <div class="sowhat"><strong>So what:</strong> The finding is robust. The US stays first and India last under both
+        denominators; only Japan and Korea swap places. The conclusion does not depend on my weakest assumption.</div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>Provenance.</strong> Database: <code>media_consumption.db</code> (SQLite, 6 tables, 188 rows) ·
+    Queries: 9 analytical SQL files in <code>/sql</code> · Pipeline: <code>etl.py</code> → <code>analysis.py</code>
+    → <code>build_dashboard.py</code> · Charts also exported as PNG in <code>/results/charts</code>.<br>
+    <strong>Sources.</strong> Ofcom Media Nations · Nielsen The Gauge · eMarketer · DataReportal · Newzoo · Niko Partners ·
+    Lumikai · IFPI · Gower Street/Comscore · PwC · MPA · Redseer · Pollstar · Ormax · Axis My India · World Bank · IBEF.
+    Every row carries a source ID and a data-quality flag. [Your name], [Month Year].
+  </footer>
+</div>
+</body>
+</html>

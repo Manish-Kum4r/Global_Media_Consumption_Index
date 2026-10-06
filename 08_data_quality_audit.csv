@@ -1,0 +1,7 @@
+table_name,cells,reported,derived,estimated,pct_reported
+countries,6,4,0,2,66.7
+time_spend,60,21,6,33,35.0
+market_size,84,16,3,65,19.0
+offline_physical,12,2,0,10,16.7
+streaming,6,0,0,6,0.0
+DATABASE TOTAL,168,43,9,116,25.6

@@ -1,0 +1,7 @@
+country,region,population_m,internet_users_m,gdp_per_capita_usd,screen_economy_usd_bn,digital_ad_per_capita_usd,total_media_min_day,data_quality,source_id,all_sources
+India,Asia-Pacific,1450,900,2703,12.4,8,480,Reported,S13,"S13, S18"
+United States,North America,342,320,90027,305.0,1000,660,Reported,S13,"S13, S18"
+United Kingdom,Europe,69,66,52000,28.0,640,660,Estimated,S1,"S1, S11, S18"
+Japan,Asia-Pacific,123,106,35951,34.0,430,780,Reported,S13,"S13, S18"
+South Korea,Asia-Pacific,52,50,36000,13.0,480,660,Reported,S13,"S13, S18"
+Brazil,Latin America,212,182,10300,12.0,55,645,Estimated,S18,"S18, S11"
