@@ -10,7 +10,7 @@ Formats tracked: linear TV, streaming video, social and short video, gaming, mus
 
 India earns about **$3.56** of screen revenue for every 1,000 hours its population spends consuming
 media. The United States earns about **$306.69**. The income gap between the two countries is about
-11x, but the revenue-per-hour gap is closer to 86x.
+33x, but the revenue-per-hour gap is closer to 86x.
 
 India already has 216.5 million paid OTT subscriptions, the third largest paying base in the world.
 Each one is worth $7.30 a year.
